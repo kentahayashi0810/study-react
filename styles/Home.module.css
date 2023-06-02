@@ -7,6 +7,23 @@
   min-height: 100vh;
 }
 
+.footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer a {
+  padding: 8px 16px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.footer a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
@@ -97,7 +114,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
