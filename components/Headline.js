@@ -1,4 +1,4 @@
-import styles from "@/styles/Home.module.css";
+import styles from "./Headline.module.css";
 import Image from "next/image";
 
 import { Inter } from "next/font/google";
@@ -11,7 +11,7 @@ export function Headline(props) {
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
-          {props.children}
+          <code className={styles.code}>pages/{props.page}.js</code>
         </p>
         <div>
           <a
