@@ -51,6 +51,12 @@
   border-radius: var(--border-radius);
 }
 
+.title {
+  text-transform: capitalize;
+  background: none;
+  color: #000;
+}
+
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
