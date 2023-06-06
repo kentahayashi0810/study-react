@@ -1,4 +1,4 @@
-import styles from "./Links.module.css";
+import styles from "@/src/components/Links/Links.module.css";
 
 export function Links() {
   const ITEMS = [
@@ -30,6 +30,7 @@ export function Links() {
       {ITEMS.map((item) => {
         return (
           <a
+            key={item.href}
             href={item.href}
             className={styles.card}
             target="_blank"

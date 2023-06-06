@@ -1,4 +1,4 @@
-import styles from "./Headline.module.css";
+import styles from "@/src/components/Headline/Headline.module.css";
 import Image from "next/image";
 
 import { Inter } from "next/font/google";
