@@ -10,6 +10,9 @@ export function Header() {
       <Link href="/about" className={styles.link}>
         About
       </Link>
+      <Link href="/test" className={styles.link}>
+        Test
+      </Link>
     </header>
   );
 }
