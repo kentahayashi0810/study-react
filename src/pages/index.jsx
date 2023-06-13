@@ -11,11 +11,12 @@ export default function Home() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
   const [isShow, setIsShow] = useState(true);
+  const [array, setArray] = useState([]);
 
   const handleClick = useCallback(
     (e) => {
       if (count < 10) {
-        setCount((count) => count + 1);
+        setCount((prevCount) => prevCount + 1);
       }
     },
     [count]
@@ -38,8 +39,18 @@ export default function Home() {
   }, []);
 
   const handleDisplay = useCallback(() => {
-    setIsShow((isShow) => !isShow);
+    setIsShow((prevIsShow) => !prevIsShow);
   }, []);
+
+  const handleAdd = useCallback(() => {
+    setArray((prevArray) => {
+      if (prevArray.some((item) => item === text)) {
+        alert("同じものが存在します。");
+        return prevArray;
+      }
+      return [...prevArray, text];
+    });
+  }, [text]);
 
   return (
     <>
@@ -49,9 +60,15 @@ export default function Home() {
       <Header />
       <button onClick={handleClick}>カウントアップボタン</button>
       <button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
+      <button onClick={handleAdd}>追加する</button>
       <input type="text" value={text} onChange={handleChange} />
       <p>{text}</p>
       {isShow ? <h1>{count}</h1> : null}
+      <ul>
+        {array.map((item) => {
+          return <li key={item}>{item}</li>;
+        })}
+      </ul>
       <Main page="index" />
 
       <Footer />
