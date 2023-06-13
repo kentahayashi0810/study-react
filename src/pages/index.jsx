@@ -9,6 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [count, setCount] = useState(0);
+  const [text, setText] = useState("");
+  const [isShow, setIsShow] = useState(true);
 
   const handleClick = useCallback(
     (e) => {
@@ -26,14 +28,30 @@ export default function Home() {
       document.body.style.backgroundColor = "";
     };
   }, []);
+
+  const handleChange = useCallback((e) => {
+    if (e.target.value.length > 5) {
+      alert("５文字以内にしてください。");
+      return;
+    }
+    setText(e.target.value.trim());
+  }, []);
+
+  const handleDisplay = useCallback(() => {
+    setIsShow((isShow) => !isShow);
+  }, []);
+
   return (
     <>
       <Head>
         <title>Index Page</title>
       </Head>
       <Header />
-      <button onClick={handleClick}>ボタン</button>
-      <h1>{count}</h1>
+      <button onClick={handleClick}>カウントアップボタン</button>
+      <button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
+      <input type="text" value={text} onChange={handleChange} />
+      <p>{text}</p>
+      {isShow ? <h1>{count}</h1> : null}
       <Main page="index" />
 
       <Footer />
