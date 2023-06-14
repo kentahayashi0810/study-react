@@ -13,6 +13,12 @@ export function Header() {
       <Link href="/test" className={styles.link}>
         Test
       </Link>
+      <Link href="/dogApi" className={styles.link}>
+        Dog API
+      </Link>
+      <Link href="/catApi" className={styles.link}>
+        Cat API
+      </Link>
     </header>
   );
 }
