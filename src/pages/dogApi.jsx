@@ -21,7 +21,7 @@ export default function DogAPI() {
         <button className={styles.button} onClick={fetchAPI}>
           Get Shiba
         </button>
-        <img src={src} alt="" />
+        <img className={styles.image} src={src} alt="" />
       </div>
       <Footer />
     </>
