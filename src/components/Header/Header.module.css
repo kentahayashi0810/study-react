@@ -18,3 +18,13 @@
   background-color: #fff;
   color: #000;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 1rem 10px;
+  }
+  .link {
+    width: 100px;
+  }
+}
