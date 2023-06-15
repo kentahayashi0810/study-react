@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Curry Rice",
+    "ingredients": ["potatoes", "carrots", "beef", "curry rou", "rice"],
+    "cookingTime": 60,
+    "temp": "hot",
+    "url": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Vingrette Salad",
+    "ingredients": ["Feta Cheese", "Lettus", "vineger", "Mustard"],
+    "cookingTime": 20,
+    "temp": "cold",
+    "url": "https://images.unsplash.com/photo-1523071290596-8ad02685dcc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Cold Salad",
+    "ingredients": [
+      "Feta Cheese",
+      "cucumber",
+      "Olive oil",
+      "Lemon",
+      "Quinoa",
+      "Pistachio",
+      "Fried Onion"
+    ],
+    "cookingTime": 20,
+    "temp": "cold",
+    "url": "https://images.unsplash.com/photo-1523071290596-8ad02685dcc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Vingrette Salad",
+    "ingredients": ["Feta Cheese", "Lettus", "vineger", "Mustard"],
+    "cookingTime": 20,
+    "temp": "cold",
+    "url": "https://images.unsplash.com/photo-1523071290596-8ad02685dcc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Vingrette Salad",
+    "ingredients": ["Feta Cheese", "Lettus", "vineger", "Mustard"],
+    "cookingTime": 20,
+    "temp": "cold",
+    "url": "https://images.unsplash.com/photo-1523071290596-8ad02685dcc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Vingrette Salad",
+    "ingredients": ["Feta Cheese", "Lettus", "vineger", "Mustard"],
+    "cookingTime": 20,
+    "temp": "cold",
+    "url": "https://images.unsplash.com/photo-1523071290596-8ad02685dcc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Vingrette Salad",
+    "ingredients": ["Feta Cheese", "Lettus", "vineger", "Mustard"],
+    "cookingTime": 20,
+    "temp": "cold",
+    "url": "https://images.unsplash.com/photo-1523071290596-8ad02685dcc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Vingrette Salad",
+    "ingredients": ["Feta Cheese", "Lettus", "vineger", "Mustard"],
+    "cookingTime": 20,
+    "temp": "cold",
+    "url": "https://images.unsplash.com/photo-1523071290596-8ad02685dcc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+  }
+]

@@ -19,6 +19,9 @@ export function Header() {
       <Link href="/catApi" className={styles.link}>
         Cat API
       </Link>
+      <Link href="/recipe" className={styles.link}>
+        Recipe
+      </Link>
     </header>
   );
 }
