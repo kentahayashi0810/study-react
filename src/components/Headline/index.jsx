@@ -9,10 +9,7 @@ export function Headline(props) {
   return (
     <>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>pages/{props.page}.js</code>
-        </p>
+        <p>Get started by editing&nbsp;</p>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -34,6 +31,8 @@ export function Headline(props) {
       <div className={styles.center}>
         <h1 className={styles.title}>{props.page} Page</h1>
       </div>
+      {props.children}
+      <button onClick={props.handleReduce}>減らす</button>
     </>
   );
 }
