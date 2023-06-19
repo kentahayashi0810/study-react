@@ -2,7 +2,7 @@ import { Footer } from "@/src/components/Footer";
 import { Header } from "@/src/components/Header";
 import { useState } from "react";
 
-export default function Test() {
+const Test = () => {
   // useStateを使い、fetchしてきた配列を格納する。
   const [users, setUsers] = useState([]);
 
@@ -35,4 +35,6 @@ export default function Test() {
       <Footer />
     </>
   );
-}
+};
+
+export default Test;

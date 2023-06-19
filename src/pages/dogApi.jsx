@@ -3,7 +3,7 @@ import { Header } from "@/src/components/Header";
 import { useState } from "react";
 import styles from "@/src/styles/Home.module.css";
 
-export default function DogAPI() {
+const DogAPI = () => {
   const [src, setSrc] = useState();
   const fetchAPI = async () => {
     const res = await fetch("https://dog.ceo/api/breed/shiba/images/random");
@@ -26,4 +26,6 @@ export default function DogAPI() {
       <Footer />
     </>
   );
-}
+};
+
+export default DogAPI;

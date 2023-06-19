@@ -3,7 +3,7 @@ import { Header } from "@/src/components/Header";
 import { useState } from "react";
 import styles from "@/src/styles/Home.module.css";
 
-export default function CatAPI() {
+const CatAPI = () => {
   const [catArray, setCatArray] = useState([]);
 
   const fetchItems = async () => {
@@ -54,4 +54,6 @@ export default function CatAPI() {
       <Footer />
     </>
   );
-}
+};
+
+export default CatAPI;

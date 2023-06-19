@@ -6,18 +6,7 @@ import { Header } from "@/src/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function About(props) {
-  const {
-    doubleCount,
-    isShow,
-    handleClick,
-    handleDisplay,
-    text,
-    array,
-    handleChange,
-    handleAdd,
-  } = props;
-
+const About = (props) => {
   return (
     <>
       <Head>
@@ -25,16 +14,18 @@ export default function About(props) {
       </Head>
       <Header />
 
-      <button onClick={handleClick}>カウントアップボタン</button>
-      <button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
-      {isShow ? <h1>{doubleCount}</h1> : null}
+      <button onClick={props.handleClick}>カウントアップボタン</button>
+      <button onClick={props.handleDisplay}>
+        {props.isShow ? "非表示" : "表示"}
+      </button>
+      {props.isShow ? <h1>{props.doubleCount}</h1> : null}
 
       <hr />
-      <input type="text" value={text} onChange={handleChange} />
-      <button onClick={handleAdd}>追加する</button>
-      <p>{text}</p>
+      <input type="text" value={props.text} onChange={props.handleChange} />
+      <button onClick={props.handleAdd}>追加する</button>
+      <p>{props.text}</p>
       <ul>
-        {array.map((item) => {
+        {props.array.map((item) => {
           return <li key={item}>{item}</li>;
         })}
       </ul>
@@ -44,4 +35,6 @@ export default function About(props) {
       <Footer />
     </>
   );
-}
+};
+
+export default About;
